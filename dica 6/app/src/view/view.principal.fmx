@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'S'
+  ClientHeight = 484
+  ClientWidth = 384
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ButtonView1: TButtonView
+    Size.Width = 80.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Position.X = 273.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 1
+    OnClick = ButtonView1Click
+    Text = 'Enviar'
+    TextSettings.Gravity = Center
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Bottom
+    Position.Y = 109.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 139.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Bottom
+    Position.Y = 248.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 236.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 380.000000000000000000
+    Viewport.Height = 232.000000000000000000
+  end
+  object ButtonView2: TButtonView
+    Size.Width = 72.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Position.X = 193.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 0
+    OnClick = ButtonView2Click
+    Text = 'Cadastrar'
+    TextSettings.Gravity = Center
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object FDQuery1: TFDQuery
+    Connection = DataModule1.DB
+    SQL.Strings = (
+      'select * from cliente            ')
+    Left = 280
+    Top = 104
+    object FDQuery1ID: TFDAutoIncField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = False
+    end
+    object FDQuery1NOME: TWideStringField
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Size = 100
+    end
+    object FDQuery1SYNC: TWideStringField
+      FieldName = 'SYNC'
+      Origin = 'SYNC'
+      Size = 1
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 264
+    Top = 160
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'NOME'
+      Control = ListView1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

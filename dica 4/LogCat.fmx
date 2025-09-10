@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 488
+  ClientWidth = 348
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 80.000000000000000000
+    TabOrder = 1
+    Text = 'Salvar'
+    TextSettings.Trimming = None
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 16.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SkLabel1: TSkLabel
+    Position.X = 122.000000000000000000
+    Position.Y = 33.000000000000000000
+    Size.Width = 67.720001220703130000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 20.000000000000000000
+    Words = <
+      item
+        Text = 'Log Cat'
+      end>
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Erro 1'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Trimming = None
+    OnClick = Button2Click
+  end
+end

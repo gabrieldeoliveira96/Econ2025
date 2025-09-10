@@ -1,0 +1,111 @@
+object frmLogin1: TfrmLogin1
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 584
+  ClientWidth = 404
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Circle2: TCircle
+    Align = Scale
+    Fill.Color = xFF0F8DE7
+    Locked = True
+    Position.X = -295.397430419921900000
+    Position.Y = -262.000000000000000000
+    Size.Width = 760.215942382812500000
+    Size.Height = 543.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object Circle1: TCircle
+    Align = Scale
+    Fill.Color = xFF0E507E
+    Locked = True
+    Position.X = -60.817333221435550000
+    Position.Y = 272.000000000000000000
+    Size.Width = 760.215270996093800000
+    Size.Height = 508.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object Rectangle1: TRectangle
+    Align = Center
+    Fill.Color = claWhite
+    Size.Width = 313.000000000000000000
+    Size.Height = 171.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claSilver
+    end
+    object Rectangle2: TRectangle
+      Align = Center
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF1F9DD4
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF0931D0
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.080450169742107390
+      Fill.Gradient.StopPosition.X = 0.919549822807312000
+      Size.Width = 145.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      OnClick = Rectangle2Click
+      object SkLabel2: TSkLabel
+        Align = Center
+        Locked = True
+        Size.Width = 40.529998779296880000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.Weight = Semibold
+        TextSettings.FontColor = claWhite
+        Words = <
+          item
+            Text = 'Login'
+          end>
+      end
+      object ShadowEffect2: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claSilver
+      end
+    end
+  end
+  object SkLabel1: TSkLabel
+    Locked = True
+    Position.X = 37.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 92.080001831054690000
+    Size.Height = 47.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family]
+    TextSettings.Font.Size = 35.000000000000000000
+    TextSettings.Font.Weight = Bold
+    TextSettings.FontColor = claWhite
+    Words = <
+      item
+        Text = 'Login'
+      end>
+  end
+end

@@ -1,0 +1,156 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{872B9AD3-82B4-4FEA-9147-78BC5C11D8A0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="dica 1\dica1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 2\LivePreview.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 3\dica3.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 4\dica4.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 5\dica5.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 6\app\dica6app.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 6\api\dica6api.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 7\dica7.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 8\dica8.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 9\dica9.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dica 10\dica10.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="dica1">
+        <MSBuild Projects="dica 1\dica1.dproj"/>
+    </Target>
+    <Target Name="dica1:Clean">
+        <MSBuild Projects="dica 1\dica1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica1:Make">
+        <MSBuild Projects="dica 1\dica1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LivePreview">
+        <MSBuild Projects="dica 2\LivePreview.dproj"/>
+    </Target>
+    <Target Name="LivePreview:Clean">
+        <MSBuild Projects="dica 2\LivePreview.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LivePreview:Make">
+        <MSBuild Projects="dica 2\LivePreview.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica3">
+        <MSBuild Projects="dica 3\dica3.dproj"/>
+    </Target>
+    <Target Name="dica3:Clean">
+        <MSBuild Projects="dica 3\dica3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica3:Make">
+        <MSBuild Projects="dica 3\dica3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica4">
+        <MSBuild Projects="dica 4\dica4.dproj"/>
+    </Target>
+    <Target Name="dica4:Clean">
+        <MSBuild Projects="dica 4\dica4.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica4:Make">
+        <MSBuild Projects="dica 4\dica4.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica5">
+        <MSBuild Projects="dica 5\dica5.dproj"/>
+    </Target>
+    <Target Name="dica5:Clean">
+        <MSBuild Projects="dica 5\dica5.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica5:Make">
+        <MSBuild Projects="dica 5\dica5.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica6app">
+        <MSBuild Projects="dica 6\app\dica6app.dproj"/>
+    </Target>
+    <Target Name="dica6app:Clean">
+        <MSBuild Projects="dica 6\app\dica6app.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica6app:Make">
+        <MSBuild Projects="dica 6\app\dica6app.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica6api">
+        <MSBuild Projects="dica 6\api\dica6api.dproj"/>
+    </Target>
+    <Target Name="dica6api:Clean">
+        <MSBuild Projects="dica 6\api\dica6api.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica6api:Make">
+        <MSBuild Projects="dica 6\api\dica6api.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica7">
+        <MSBuild Projects="dica 7\dica7.dproj"/>
+    </Target>
+    <Target Name="dica7:Clean">
+        <MSBuild Projects="dica 7\dica7.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica7:Make">
+        <MSBuild Projects="dica 7\dica7.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica8">
+        <MSBuild Projects="dica 8\dica8.dproj"/>
+    </Target>
+    <Target Name="dica8:Clean">
+        <MSBuild Projects="dica 8\dica8.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica8:Make">
+        <MSBuild Projects="dica 8\dica8.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica9">
+        <MSBuild Projects="dica 9\dica9.dproj"/>
+    </Target>
+    <Target Name="dica9:Clean">
+        <MSBuild Projects="dica 9\dica9.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica9:Make">
+        <MSBuild Projects="dica 9\dica9.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dica10">
+        <MSBuild Projects="dica 10\dica10.dproj"/>
+    </Target>
+    <Target Name="dica10:Clean">
+        <MSBuild Projects="dica 10\dica10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dica10:Make">
+        <MSBuild Projects="dica 10\dica10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="dica1;LivePreview;dica3;dica4;dica5;dica6app;dica6api;dica7;dica8;dica9;dica10"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="dica1:Clean;LivePreview:Clean;dica3:Clean;dica4:Clean;dica5:Clean;dica6app:Clean;dica6api:Clean;dica7:Clean;dica8:Clean;dica9:Clean;dica10:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="dica1:Make;LivePreview:Make;dica3:Make;dica4:Make;dica5:Make;dica6app:Make;dica6api:Make;dica7:Make;dica8:Make;dica9:Make;dica10:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

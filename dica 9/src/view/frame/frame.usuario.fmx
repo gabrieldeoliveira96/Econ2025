@@ -1,0 +1,32 @@
+object Frame1: TFrame1
+  Align = Top
+  Margins.Top = 8.000000000000000000
+  Position.Y = 8.000000000000000000
+  Size.Width = 336.000000000000000000
+  Size.Height = 84.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 336.000000000000000000
+    Size.Height = 84.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblNome: TSkLabel
+      Align = Client
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Size.Width = 304.000000000000000000
+      Size.Height = 68.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Size, FontColor]
+      TextSettings.Font.Weight = Semibold
+      Words = <
+        item
+          Text = 'lblNome'
+        end>
+    end
+  end
+end

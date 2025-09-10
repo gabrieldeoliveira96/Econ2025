@@ -1,0 +1,196 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 472
+  ClientWidth = 320
+  Fill.Color = xFFEFEFEF
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 0
+    ReturnKeyType = Next
+    Position.X = 16.000000000000000000
+    Position.Y = 31.000000000000000000
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SkLabel1: TSkLabel
+    Align = Top
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+    TextSettings.Font.Weight = Semibold
+    Words = <
+      item
+        Text = 'Nome'
+      end>
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Position.Y = 402.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object Rectangle2: TRectangle
+      Align = Right
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF1F9DD4
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF0931D0
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.080450169742107390
+      Fill.Gradient.StopPosition.X = 0.919549822807312000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 165.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object SkLabel2: TSkLabel
+        Align = Center
+        Locked = True
+        Size.Width = 43.369998931884770000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.Weight = Semibold
+        TextSettings.FontColor = claWhite
+        Words = <
+          item
+            Text = 'Salvar'
+          end>
+      end
+      object ShadowEffect2: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claSilver
+      end
+    end
+  end
+  object SkLabel3: TSkLabel
+    Align = Top
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 79.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+    TextSettings.Font.Weight = Semibold
+    Words = <
+      item
+        Text = 'CPF'
+      end>
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 1
+    KeyboardType = NumbersAndPunctuation
+    ReturnKeyType = Next
+    Position.X = 16.000000000000000000
+    Position.Y = 102.000000000000000000
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SkLabel4: TSkLabel
+    Align = Top
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+    TextSettings.Font.Weight = Semibold
+    Words = <
+      item
+        Text = 'E-mail'
+      end>
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 2
+    KeyboardType = EmailAddress
+    ReturnKeyType = Next
+    Position.X = 16.000000000000000000
+    Position.Y = 173.000000000000000000
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SkLabel5: TSkLabel
+    Align = Top
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 221.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+    TextSettings.Font.Weight = Semibold
+    Words = <
+      item
+        Text = 'Telefone'
+      end>
+  end
+  object Edit4: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 3
+    KeyboardType = PhonePad
+    ReturnKeyType = Search
+    Position.X = 16.000000000000000000
+    Position.Y = 244.000000000000000000
+    Margins.Left = 16.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 16.000000000000000000
+    Size.Width = 288.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
